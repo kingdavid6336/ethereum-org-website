@@ -28,16 +28,17 @@ No `/code-review`. A request to list a third-party product, service or resource.
   - `pass`/`fail` quotes are re-fetched from `url` (20+ characters, `…` joins pieces of 12+) or become ❔;
   - a pass only the product's own site supports (`source: author`) shows as ☑️, not ✅;
   - `url` is written without the scheme.
-- Problems in the added text are normal findings at `pr-head` lines, citing your evidence: inaccurate, miscredited, duplicated, promotional, or unlike its neighbouring entries. The `fix` is a plain-text rewrite or removal. Route with `needs product review 🕵️`.
+- Problems in the added text are normal findings at `pr-head` lines, citing your evidence: inaccurate, miscredited, duplicated, promotional, or unlike its neighbouring entries. The `fix` is a plain-text rewrite or removal, with no links or URLs (they are redacted in transit and break the text). Route with `needs product review 🕵️`.
 
 **Known pitfalls.**
+- The product's own pages can't show that it is accurate, credible or widely used; without an independent source those criteria stay `unknown`.
 - The policy's own text is never evidence for a `fail`; something not shown is `unknown`.
 - Filing an issue first is not a criterion.
 - When the page already lists similar products, ask first what this one offers that they don't.
 - The site's registration date and first archive snapshot are added automatically; don't repeat them as facts.
 - State the comparison as a `repo` fact, e.g. "This page already lists 30 node providers".
 
-**Policies and criteria.** Pick the policy for the edited list; if two fit, pick one and say why in `policy_why`.
+**Policies and criteria.** Pick the policy for the edited list; if two fit, pick one and say why in `policy_why`. Every policy also has a first `must` criterion: fits the edited page's stated scope (Ethereum and its layer 2s); a product built only for another network fails it, quoting where the product says so.
 
 | Policy | Applies to | `must` | `nice` |
 |---|---|---|---|
